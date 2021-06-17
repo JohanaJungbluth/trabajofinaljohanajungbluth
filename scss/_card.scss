@@ -1,0 +1,16 @@
+.card{
+    border-radius: 30px;
+    color: cornsilk;
+    font-family: 'Playfair Display', serif;
+    .card-header{
+        background-color: transparent;
+        color: #e9622c;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        font-size: 30px;
+        }
+        .card-text{
+        text-align: center;
+        padding: 10px 20px 20px 20px;
+        }
+}

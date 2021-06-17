@@ -1,0 +1,454 @@
+/* ------------------------------------- DISEÑO GENERAL DE TODOS LOS HTML--------------------------------------------------*/
+/* Fondo de la página web */
+body {
+    background-color: #FEFEFE;
+}
+h1{
+    color: rgb(9, 78, 55);
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+h1 {
+    animation-duration: 10s;
+    animation-name: aparecer;
+}
+/* Animación */
+@keyframes aparecer {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+h2{
+    color:grey;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif; 
+    animation-duration: 15s;
+    animation-name: aparecer; 
+    text-align: center;
+}
+
+/* Modifica todos los parrafos */
+p{
+    color: rgb(5, 4, 4);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+/*Subtitulos */
+.subtitle{
+    color: rgb(9, 78, 55);
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: normal;
+    text-decoration: none;
+    padding: auto;
+}
+/* Estilo del pie de página */
+footer{
+    color: rgb(9, 78, 55);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* ------------------------------------- FIN INDEX --------------------------------------------------*/
+/* Imagenes para HTMLS de cada dominio */
+
+.ImagenDominioRelacion{
+    background-image: url(imagenes/ImagenRelaciones.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: right;
+}
+.ImagenDominioRelacion{
+    animation-duration: 10s;
+    animation-name: aparecer;
+}
+/* Animación */
+@keyframes aparecer {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+.ImagenDominioInfluencia{
+    background-image: url(imagenes/ImagenInfluencia.png);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: right;
+}
+.ImagenDominioInfluencia{
+    animation-duration: 10s;
+    animation-name: aparecer;
+}
+/* Animación */
+@keyframes aparecer {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+.ImagenDominioEjecucion{
+    background-image: url(imagenes/ImagenEjecucion.png);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: right;
+}
+.ImagenDominioEjecucion{
+    animation-duration: 10s;
+    animation-name: aparecer;
+}
+/* Animación */
+@keyframes aparecer {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+.ImagenDominioEstrategia{
+    background-image: url(imagenes/ImagenEstrategia.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: right;
+}
+.ImagenDominioEstrategia{
+    animation-duration: 10s;
+    animation-name: aparecer;
+}
+/* Animación */
+@keyframes aparecer {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+/* ------------------------------------- Grilla + Responsive --------------------------------------------------*/
+
+#grilla{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 2em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Menú */
+
+.navegacion{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.titulo1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+}
+
+.CajaDescripcionConVideo{
+    grid-column: 1/4;
+    grid-row: 3/5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 3em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+}
+
+#CajaDescripcionDominio{
+    grid-column: 1/2;
+    grid-row: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 2em;
+    border-radius: 30px;
+    background-color: #EFEDED;
+    padding: 20px 0px 20px 20px;
+}
+
+#CajaVideo{
+    grid-column: 2/3;
+    grid-row: auto;
+    background-color:#68a5c4;
+    border-radius: 30px;
+    padding: 20px 40px 20px 20px;
+}
+
+.Card1{
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.Card2{
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.Card3{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+.Card4{
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+
+.Card5{
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+.Card6{
+    grid-column: 3/4;
+    grid-row: 6/7;
+}
+
+.Card7{
+    grid-column: 1/2;
+    grid-row: 7/8;
+}
+
+.Card8{
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
+
+.Card9{
+    grid-column: 3/4;
+    grid-row: 7/8;
+}
+
+#testimonios{
+    grid-column: 1/4;
+    grid-row: 8/9;
+    background-color: #cc7654;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: whitesmoke;
+    padding: 30px 30px 30px 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#footer{
+    grid-column: 1/4;
+    grid-row: 9/10; 
+    justify-self: center;
+}
+/* ---------------------------------- INICIO ESTILO CARDS TEMAS ---------------------------- */
+.card{
+    border-radius: 30px;
+    color: cornsilk;
+    font-family: 'Playfair Display', serif;
+}
+.card-header{
+    background-color: transparent;
+    color: #e9622c;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 30px;
+}
+.card-text{
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+}
+/* ---------------------------------- FIN ESTILO CARDS ---------------------------- */
+
+/* ------------------------------------------------ INICIO INFORMACION GENERAL -------- -------------------------------------*/
+#CajaDescripcion{
+    background-color:#e6e6e6;
+    border-radius: 30px;
+    padding: 20px 40px 20px 20px;
+    display: flex;
+    margin-top: 3%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+#CajaEjemplo1{
+    background-color:#E3A86E;
+    border-radius: 30px;
+    padding: 20px 40px 20px 20px;
+}
+#CajaEjemplo2{
+    background-color:#A7D6D0;
+    border-radius: 30px;
+    padding: 20px 40px 20px 20px;
+}
+#CajaEjemplo3{
+    background-color:#F5DF9A;
+    border-radius: 30px;
+    padding: 20px 40px 20px 20px;
+}
+#CajaTextoVideo{
+    background-color:#e6e6e6;
+    border-radius: 30px;
+    padding: 20px 40px 20px 20px;
+}
+#CajaVideo{
+    background-color:#68a5c4;
+    border-radius: 30px;
+    padding: 20px 40px 20px 20px;
+}
+#ZonaEjemplos{
+        display: flex;
+        flex-direction: row;
+        flex:1;
+        margin-top: 50px;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 90%;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+}
+#ZonaTextoConVideo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.TituloEjemplos{
+    width: 90%;
+    margin: 30px auto 30px auto;
+}
+/* ---------------------- INICIO REPONSIVE --------------------------*/
+
+@media only screen and (max-width: 480px){
+
+    #grilla{
+        width: 100%;
+        gap: 1em;
+    }
+    .CuadroTitulo{
+        grid-column:2/3 ;
+    }
+    #CajaDescripcionDominio{
+        grid-column: 1/3;
+        grid-row: auto;
+    }
+    
+    #CajaVideo{
+        grid-column: 1/3;
+        grid-row: auto;
+    }
+
+    iframe{
+        width: 90%;
+    }
+
+    .Card1{
+        grid-column: 1/4;
+        grid-row: 5/6;
+        width: 90%;
+        justify-self: center;
+    }
+    
+    .Card2{
+        grid-column: 1/4;
+        grid-row: 6/7;
+        width: 90%;
+        justify-self: center;
+    }
+    
+    .Card3{
+        grid-column: 1/4;
+        grid-row: 7/8;
+        width: 90%;
+        justify-self: center;
+    }
+    
+    .Card4{
+        grid-column: 1/4;
+        grid-row: 8/9;
+        width: 90%;
+        justify-self: center;
+    }
+    
+    .Card5{
+        grid-column: 1/4;
+        grid-row: 9/10;
+        width: 90%;
+        justify-self: center;
+    }
+    
+    .Card6{
+        grid-column: 1/4;
+        grid-row: 10/11;
+        width: 90%;
+        justify-self: center;
+    }
+    
+    .Card7{
+        grid-column: 1/4;
+        grid-row: 11/12;
+        width: 90%;
+        justify-self: center;
+    }
+    
+    .Card8{
+        grid-column: 1/4;
+        grid-row: 12/13;
+        width: 90%;
+        justify-self: center;
+    }
+    
+    .Card9{
+        grid-column: 1/4;
+        grid-row: 13/14;
+        width: 90%;
+        justify-self: center;
+    }
+    
+    #testimonios{
+        grid-column: 1/4;
+        grid-row: 14/15;
+        justify-self: center;
+        width: 90%;
+    }
+    
+    #footer{
+        grid-column: 1/4;
+        grid-row: auto; 
+        justify-self: center;
+    }
+}
+/* ---------------------- FIN REPONSIVE --------------------------*/
+
+

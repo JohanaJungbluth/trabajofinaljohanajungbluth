@@ -1,0 +1,332 @@
+@charset "UTF-8";
+.card {
+  border-radius: 30px;
+  color: cornsilk;
+  font-family: 'Playfair Display', serif; }
+  .card .card-header {
+    background-color: transparent;
+    color: #e9622c;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 30px; }
+  .card .card-text {
+    text-align: center;
+    padding: 10px 20px 20px 20px; }
+
+@media only screen and (max-width: 480px) {
+  #grilla {
+    width: 100%;
+    gap: 1em; }
+    #grilla .CuadroTitulo {
+      grid-column: 2/3; }
+    #grilla #CajaDescripcionDominio {
+      grid-column: 1/3;
+      grid-row: auto; }
+    #grilla #CajaVideo {
+      grid-column: 1/3;
+      grid-row: auto; }
+    #grilla iframe {
+      width: 90%; }
+    #grilla .card .Card1 {
+      grid-column: 1/4;
+      grid-row: 5/6;
+      width: 90%;
+      justify-self: center; }
+    #grilla .card .Card2 {
+      grid-column: 1/4;
+      grid-row: 6/7;
+      width: 90%;
+      justify-self: center; }
+    #grilla .card .Card3 {
+      grid-column: 1/4;
+      grid-row: 7/8;
+      width: 90%;
+      justify-self: center; }
+    #grilla .card .Card4 {
+      grid-column: 1/4;
+      grid-row: 8/9;
+      width: 90%;
+      justify-self: center; }
+    #grilla .card .Card5 {
+      grid-column: 1/4;
+      grid-row: 9/10;
+      width: 90%;
+      justify-self: center; }
+    #grilla .card .Card6 {
+      grid-column: 1/4;
+      grid-row: 10/11;
+      width: 90%;
+      justify-self: center; }
+    #grilla .card .Card7 {
+      grid-column: 1/4;
+      grid-row: 11/12;
+      width: 90%;
+      justify-self: center; }
+    #grilla .card .Card8 {
+      grid-column: 1/4;
+      grid-row: 12/13;
+      width: 90%;
+      justify-self: center; }
+    #grilla .card .Card9 {
+      grid-column: 1/4;
+      grid-row: 13/14;
+      width: 90%;
+      justify-self: center; }
+    #grilla #testimonios {
+      grid-column: 1/4;
+      grid-row: 14/15;
+      justify-self: center;
+      width: 90%; }
+    #grilla #footer {
+      grid-column: 1/4;
+      grid-row: auto;
+      justify-self: center; } }
+
+#grilla {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-auto-rows: minmax(100px, auto);
+  gap: 2em;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  /* Menú */ }
+  #grilla .navegacion {
+    grid-column: 1/4;
+    grid-row: 1/2; }
+  #grilla .titulo1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center; }
+  #grilla .CajaDescripcionConVideo {
+    grid-column: 1/4;
+    grid-row: 3/5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 3em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid; }
+    #grilla .CajaDescripcionConVideo #CajaDescripcionDominio {
+      grid-column: 1/2;
+      grid-row: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      gap: 2em;
+      border-radius: 30px;
+      background-color: #EFEDED;
+      padding: 20px 0px 20px 20px; }
+    #grilla .CajaDescripcionConVideo #CajaVideo {
+      grid-column: 2/3;
+      grid-row: auto;
+      background-color: #68a5c4;
+      border-radius: 30px;
+      padding: 20px 40px 20px 20px; }
+  #grilla .card {
+    display: grid; }
+    #grilla .card .Card1 {
+      grid-column: 1/2;
+      grid-row: 5/6; }
+    #grilla .card .Card2 {
+      grid-column: 2/3;
+      grid-row: 5/6; }
+    #grilla .card .Card3 {
+      grid-column: 3/4;
+      grid-row: 5/6; }
+    #grilla .card .Card4 {
+      grid-column: 1/2;
+      grid-row: 6/7; }
+    #grilla .card .Card5 {
+      grid-column: 2/3;
+      grid-row: 6/7; }
+    #grilla .card .Card6 {
+      grid-column: 3/4;
+      grid-row: 6/7; }
+    #grilla .card .Card7 {
+      grid-column: 1/2;
+      grid-row: 7/8; }
+    #grilla .card .Card8 {
+      grid-column: 2/3;
+      grid-row: 7/8; }
+    #grilla .card .Card9 {
+      grid-column: 3/4;
+      grid-row: 7/8; }
+  #grilla #testimonios {
+    grid-column: 1/4;
+    grid-row: 8/9;
+    background-color: #cc7654;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: whitesmoke;
+    padding: 30px 30px 30px 30px;
+    font-family: 'Montserrat', sans-serif; }
+  #grilla #footer {
+    grid-column: 1/4;
+    grid-row: 9/10;
+    justify-self: center; }
+
+body {
+  background-color: #FEFEFE; }
+
+.CuadroTitulo h1 {
+  color: #094e37;
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+  margin-top: 30px; }
+
+.CuadroTitulo h2 {
+  color: grey;
+  font-size: 40px;
+  font-family: 'Playfair Display', serif;
+  animation-duration: 15s;
+  animation-name: aparecer;
+  text-align: center; }
+
+#zona1 {
+  display: flex;
+  flex-direction: row-reverse;
+  flex: 1;
+  margin-top: 50px;
+  justify-content: space-around;
+  gap: 2rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  /* Estilo para Cuadro Relaciones Index*/
+  /* Modifica todos los parrafos */ }
+  #zona1 .CuadroRelaciones {
+    background-color: #EFEDED;
+    border-radius: 30px;
+    padding: 20px 0px 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; }
+  #zona1 .CuadroInformacionGeneral {
+    background-color: #68a5c4;
+    border-radius: 30px;
+    padding: 20px 40px 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; }
+  #zona1 .imagen1 {
+    background-image: url(imagenes/ImagenRelaciones.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: right; }
+  #zona1 .imagen2 {
+    background-image: url(imaenes/ImagenInformaciongeneral.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: right; }
+  #zona1 .subtitle {
+    color: #094e37;
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: normal;
+    text-decoration: none;
+    padding: auto; }
+  #zona1 p {
+    color: #050404;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    line-height: 25px; }
+
+#zona2 {
+  display: flex;
+  margin-top: 3%;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  /* Estilo para Cuadro Estrategia Index*/
+  /* Clase para Cuadro Influencia*/
+  /* Modifica todos los parrafos */ }
+  #zona2 .zona2__CuadroEjecucion {
+    background-color: #A7D6D0;
+    border-radius: 30px;
+    padding: 20px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 30%; }
+  #zona2 .CuadroEstrategia {
+    background-color: #F5DF9A;
+    border-radius: 30px;
+    padding: 20px 0px 20px 20px;
+    background-image: linear-gradient(to bottom, #F5DF9A, #FAE08B, #F8E6AE);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 30%;
+    gap: 3rem; }
+  #zona2 .CuadroInfluencia {
+    background-color: #E3A86E;
+    border-radius: 30px;
+    padding: 20px 20px 20px 20px;
+    background-image: linear-gradient(to bottom, #E3A86E, #E99761, #FDD0A3);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 30%; }
+  #zona2 .subtitle {
+    color: #094e37;
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: normal;
+    text-decoration: none;
+    padding: auto; }
+  #zona2 p {
+    color: #050404;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    line-height: 25px; }
+
+#CajaBase {
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 30px;
+  padding: 20px 30px 20px 30px;
+  margin-top: 5%;
+  width: 80%;
+  /* Etiquetas dentro del Form */ }
+  #CajaBase form {
+    text-align: center;
+    display: grid; }
+  #CajaBase label {
+    color: #751847;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; }
+  #CajaBase .subtitle {
+    color: #094e37;
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: normal;
+    text-decoration: none;
+    padding: auto;
+    margin-bottom: 50px; }
+
+footer {
+  color: #094e37;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
