@@ -216,15 +216,17 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto; }
   #zona1 .imagen1 {
-    background-image: url(imagenes/ImagenRelaciones.png);
+    background-image: url(../imagenes/ImagenRelaciones.png);
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: right; }
   #zona1 .imagen2 {
-    background-image: url(imaenes/ImagenInformaciongeneral.png);
+    background-image: url(../imagenes/ImagenInformaciongeneral.png);
     background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: right; }
+    background-size: contain;
+    background-position: bottom right;
+    height: 50em;
+  }
   #zona1 .subtitle {
     color: #094e37;
     text-align: left;
