@@ -84,13 +84,14 @@ body p {
   line-height: 25px;
 }
 body footer {
-  color: #094e37;
-  font-family: "Montserrat", sans-serif;
+  color: rgb(9, 78, 55);
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 10px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 50px;
+  background-color: #cc7654;
+  font-size: 20px;
 }
 .grid-2 {
   display: grid;
@@ -123,7 +124,9 @@ img{
       "."
       "."; 
   }
-  
+  footer{
+
+  }
   .grid-3 {
     display: grid; 
     grid-template-columns: 1fr; 
