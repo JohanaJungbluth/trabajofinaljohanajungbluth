@@ -3,41 +3,52 @@
 body {
     background-color: #FEFEFE;
 }
-h1{
+
+h1 {
     color: rgb(9, 78, 55);
     text-align: center;
-    font-size: 100px;
     font-family: 'Playfair Display', serif;
     margin-bottom: 20px;
     margin-top: 30px;
+    font-size: 100px;
 }
+
 h1 {
     animation-duration: 10s;
     animation-name: aparecer;
 }
+
 /* Animación */
 @keyframes aparecer {
     0% {
-    opacity: 0;
+        opacity: 0;
     }
+
     100% {
-    opacity: 1;
+        opacity: 1;
     }
 }
-img{
-    height: 30%;
-}
-h2{
-    color:grey;
+
+h2 {
+    color: grey;
     font-size: 40px;
-    font-family: 'Playfair Display', serif; 
+    font-family: 'Playfair Display', serif;
     animation-duration: 15s;
-    animation-name: aparecer; 
+    animation-name: aparecer;
     text-align: center;
 }
 
+h3 {
+    font-size: 100%;
+    color: rgb(9, 78, 55);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
 /* Modifica todos los parrafos */
-p{
+p {
     color: rgb(5, 4, 4);
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
@@ -45,8 +56,9 @@ p{
     word-spacing: 2px;
     line-height: 25px;
 }
+
 /*Subtitulos */
-.subtitle{
+.subtitle {
     color: rgb(9, 78, 55);
     text-align: left;
     font-size: 40px;
@@ -55,8 +67,9 @@ p{
     text-decoration: none;
     padding: auto;
 }
+
 /* Estilo del pie de página */
-footer{
+footer {
     color: rgb(9, 78, 55);
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -69,117 +82,137 @@ footer{
 
 /* Imagenes para HTMLS de cada dominio */
 
-.ImagenDominioRelacion{
+.ImagenDominioRelacion {
     background-image: url(imagenes/ImagenRelaciones.png);
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: right;
 }
-.ImagenDominioRelacion{
+
+.ImagenDominioRelacion {
     animation-duration: 10s;
     animation-name: aparecer;
 }
+
+img {
+    max-width: 100%;
+}
+
 /* Animación */
 @keyframes aparecer {
     0% {
-    opacity: 0;
+        opacity: 0;
     }
+
     100% {
-    opacity: 1;
+        opacity: 1;
     }
 }
-.ImagenDominioInfluencia{
+
+.ImagenDominioInfluencia {
     background-image: url(imagenes/ImagenInfluencia.png);
     background-repeat: no-repeat;
     background-size: 130%;
     background-position: right;
 }
-.ImagenDominioInfluencia{
+
+.ImagenDominioInfluencia {
     animation-duration: 10s;
     animation-name: aparecer;
 }
+
 /* Animación */
 @keyframes aparecer {
     0% {
-    opacity: 0;
+        opacity: 0;
     }
+
     100% {
-    opacity: 1;
+        opacity: 1;
     }
 }
-.ImagenDominioEjecucion{
+
+.ImagenDominioEjecucion {
     background-image: url(imagenes/ImagenEjecucion.png);
     background-repeat: no-repeat;
     background-size: 130%;
     background-position: right;
 }
-.ImagenDominioEjecucion{
+
+.ImagenDominioEjecucion {
     animation-duration: 10s;
     animation-name: aparecer;
 }
+
 /* Animación */
 @keyframes aparecer {
     0% {
-    opacity: 0;
+        opacity: 0;
     }
+
     100% {
-    opacity: 1;
+        opacity: 1;
     }
 }
-.ImagenDominioEstrategia{
+
+.ImagenDominioEstrategia {
     background-image: url(imagenes/ImagenEstrategia.png);
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: right;
 }
-.ImagenDominioEstrategia{
+
+.ImagenDominioEstrategia {
     animation-duration: 10s;
     animation-name: aparecer;
 }
+
 /* Animación */
 @keyframes aparecer {
     0% {
-    opacity: 0;
+        opacity: 0;
     }
+
     100% {
-    opacity: 1;
+        opacity: 1;
     }
 }
 
-.CajaDescripcionConVideo{
-    grid-column: 1/4;
-    grid-row: 3/5;
+.CajaDescripcionConVideo {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: 3em;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". .";
 }
 
-#CajaDescripcionDominio{
-    grid-column: 1/2;
-    grid-row: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: 2em;
+#CajaDescripcionDominio {
     border-radius: 30px;
     background-color: #EFEDED;
-    padding: 20px 0px 20px 20px;
+    padding: 20px 40px 20px 20px;
 }
 
-#CajaVideo{
-    grid-column: 2/3;
-    grid-row: auto;
-    background-color:#68a5c4;
+#CajaVideo {
+    background-color: #68a5c4;
     border-radius: 30px;
     padding: 20px 40px 20px 20px;
 }
 
-#testimonios{
+@media (max-width: 768px) {
+    .CajaDescripcionConVideo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px 30px;
+        grid-template-areas:
+            "."
+            ".";
+    }
+}
+
+#testimonios {
     grid-column: 1/4;
     grid-row: 8/9;
     background-color: #cc7654;
@@ -193,22 +226,24 @@ footer{
 
 /* ---------------------------------- INICIO ESTILO CARDS TEMAS ---------------------------- */
 
-.card-header{
+.card-header {
     background-color: transparent;
     color: #e9622c;
     font-family: 'Playfair Display', serif;
     text-align: center;
     font-size: 30px;
 }
-.card-text{
+
+.card-text {
     text-align: center;
     padding: 10px 20px 20px 20px;
 }
+
 /* ---------------------------------- FIN ESTILO CARDS ---------------------------- */
 
 /* ------------------------------------------------ INICIO INFORMACION GENERAL -------- -------------------------------------*/
-#CajaDescripcion{
-    background-color:#e6e6e6;
+#CajaDescripcion {
+    background-color: #e6e6e6;
     border-radius: 30px;
     padding: 20px 40px 20px 20px;
     display: flex;
@@ -221,62 +256,111 @@ footer{
     margin-right: auto;
     text-align: justify;
 }
-#CajaEjemplo1{
-    background-color:#E3A86E;
-    border-radius: 30px;
-    padding: 20px 40px 20px 20px;
-    text-align: center;
-}
-#CajaEjemplo2{
-    background-color:#A7D6D0;
-    border-radius: 30px;
-    padding: 20px 40px 20px 20px;
-    text-align: center;
-}
-#CajaEjemplo3{
-    background-color:#F5DF9A;
-    border-radius: 30px;
-    padding: 20px 40px 20px 20px;
-    text-align: center;
-}
-#CajaTextoVideo{
-    background-color:#e6e6e6;
-    border-radius: 30px;
-    padding: 20px 40px 20px 20px;
-}
-#CajaVideo{
-    background-color:#68a5c4;
-    border-radius: 30px;
-    padding: 20px 40px 20px 20px;
-}
-#ZonaEjemplos{
-        display: flex;
-        flex-direction: row;
-        flex:1;
-        margin-top: 50px;
-        justify-content: space-between;
-        gap: 1rem;
-        width: 90%;
-        justify-content: space-around;
-        margin-left: auto;
-        margin-right: auto;
-}
-#ZonaTextoConVideo{
+
+.grid-3 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . .";
+}
+
+@media(max-width: 900px) {
+    .grid-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 30px 30px;
+        grid-template-areas:
+            "."
+            "."
+            ".";
+    }
+
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 30px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". .";
+    }
+}
+
+@media(max-width: 900px) {
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px 30px;
+        grid-template-areas:
+            "."
+            ".";
+    }
+}
+
+#CajaEjemplo1 {
+    background-color: #E3A86E;
+    border-radius: 30px;
+    padding: 20px 40px 20px 20px;
+    text-align: center;
+}
+
+
+#CajaEjemplo2 {
+    background-color: #A7D6D0;
+    border-radius: 30px;
+    padding: 20px 40px 20px 20px;
+    text-align: center;
+}
+
+#CajaEjemplo3 {
+    background-color: #F5DF9A;
+    border-radius: 30px;
+    padding: 20px 40px 20px 20px;
+    text-align: center;
+}
+
+#CajaTextoVideo {
+    background-color: #e6e6e6;
+    border-radius: 30px;
+    padding: 20px 40px 20px 20px;
+}
+
+#CajaVideo {
+    background-color: #68a5c4;
+    border-radius: 30px;
+    padding: 20px 40px 20px 20px;
+}
+
+#ZonaEjemplos {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-top: 50px;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1rem;
     width: 90%;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ZonaTextoConVideo {
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
 }
 
-.TituloEjemplos{
+.TituloEjemplos {
     width: 90%;
     margin: 30px auto 30px auto;
 }
 
-
-
+iframe {
+    max-width: 100%;
+}

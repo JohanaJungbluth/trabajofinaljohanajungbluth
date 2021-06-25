@@ -1,0 +1,138 @@
+body {
+  background-color: #f5faf5;
+  /* Modifica todos los parrafos */
+  /* Estilo para Cuadro Estrategia Index*/
+  /* Clase para Cuadro Influencia*/
+  /* Modifica todos los parrafos */
+}
+body .CuadroTitulo h1 {
+  color: #094e37;
+  text-align: center;
+  font-size: 100px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+body .CuadroTitulo h2 {
+  color: grey;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  animation-duration: 15s;
+  animation-name: aparecer;
+  text-align: center;
+}
+body .CuadroRelaciones {
+  background-color: #EFEDED;
+  border-radius: 30px;
+  padding: 20px 0px 20px 20px;
+
+}
+body .CuadroInformacionGeneral {
+  background-color: #68a5c4;
+  border-radius: 30px;
+  padding: 20px 40px 20px 20px;
+}
+body .subtitle {
+  color: #094e37;
+  text-align: left;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  letter-spacing: normal;
+  text-decoration: none;
+  padding: auto;
+}
+body p {
+  color: #050404;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  letter-spacing: normal;
+  word-spacing: 2px;
+  line-height: 25px;
+}
+body .CuadroEjecucion {
+  background-color: #A7D6D0;
+  border-radius: 30px;
+  padding: 20px 20px 20px 20px;
+}
+body .CuadroEstrategia {
+  background-color: #F5DF9A;
+  border-radius: 30px;
+  padding: 20px 0px 20px 20px;
+  background-image: linear-gradient(to bottom, #F5DF9A, #FAE08B, #F8E6AE);
+}
+body .CuadroInfluencia {
+  background-color: #E3A86E;
+  border-radius: 30px;
+  padding: 20px 20px 20px 20px;
+  background-image: linear-gradient(to bottom, #E3A86E, #E99761, #FDD0A3);
+}
+body .subtitle {
+  color: #094e37;
+  text-align: left;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  letter-spacing: normal;
+  text-decoration: none;
+  padding: auto;
+}
+body p {
+  color: #050404;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  letter-spacing: normal;
+  word-spacing: 2px;
+  line-height: 25px;
+}
+body footer {
+  color: #094e37;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+      ". .";
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . .";
+}
+img{
+  max-width: 100%;
+}
+@media(max-width: 900px) {
+  .grid-2 {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 30px 30px; 
+    grid-template-areas: 
+      "."
+      "."; 
+  }
+  
+  .grid-3 {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 30px 30px; 
+    grid-template-areas: 
+      "."
+      "."
+      "."; 
+  }
+}
+/*# sourceMappingURL=prueba.css.map */
