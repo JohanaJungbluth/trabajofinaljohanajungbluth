@@ -124,9 +124,7 @@ img{
       "."
       "."; 
   }
-  footer{
 
-  }
   .grid-3 {
     display: grid; 
     grid-template-columns: 1fr; 

@@ -78,7 +78,13 @@ footer {
     margin-top: 50px;
     background-color: #cc7654;
     font-size: 20px;
-    text-decoration-color: #e9622c;
+}
+a{
+    color: rgb(9, 78, 55);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
 }
 
 /* Imagenes para HTMLS de cada dominio */
